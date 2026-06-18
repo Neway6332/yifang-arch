@@ -1,0 +1,57 @@
+﻿# Decap CMS Configuration
+# https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "feat(cms): Create {{collection}} "{{slug}}""
+    update: "feat(cms): Update {{collection}} "{{slug}}""
+    delete: "feat(cms): Delete {{collection}} "{{slug}}""
+    uploadMedia: "feat(cms): Upload "{{path}}""
+    deleteMedia: "feat(cms): Delete "{{path}}""
+
+media_folder: "assets/images/projects"
+public_folder: "/assets/images/projects"
+
+collections:
+  - name: "projects"
+    label: "项目案例"
+    label_singular: "项目"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题 (中文)", name: "title", widget: "string", required: true }
+      - { label: "Title (English)", name: "title_en", widget: "string", required: true }
+      - { label: "分类", name: "category", widget: "select", options: ["architecture", "interior", "planning", "landscape"], required: true }
+      - { label: "分类标签 (中文)", name: "category_label", widget: "string", default: "建筑设计" }
+      - { label: "Category Label (English)", name: "category_label_en", widget: "string", default: "Architecture" }
+      - { label: "年份", name: "year", widget: "string", required: true }
+      - { label: "地点 (中文)", name: "location", widget: "string" }
+      - { label: "Location (English)", name: "location_en", widget: "string" }
+      - { label: "封面图片", name: "image", widget: "image", required: true }
+      - { label: "描述 (中文)", name: "desc", widget: "text", required: true }
+      - { label: "Description (English)", name: "desc_en", widget: "text", required: true }
+      - { label: "排序", name: "order", widget: "number", default: 0 }
+
+  - name: "news"
+    label: "新闻动态"
+    label_singular: "新闻"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "标题 (中文)", name: "title", widget: "string", required: true }
+      - { label: "Title (English)", name: "title_en", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime", required: true }
+      - { label: "摘要 (中文)", name: "excerpt", widget: "text" }
+      - { label: "Excerpt (English)", name: "excerpt_en", widget: "text" }
+      - { label: "正文 (中文)", name: "body", widget: "markdown", required: true }
+      - { label: "Body (English)", name: "body_en", widget: "markdown" }
+      - label: "标签"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ["公司新闻", "项目动态", "团队动态", "行业活动"]
+      - { label: "封面图片", name: "image", widget: "image", required: false }

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 — 深圳市异方建筑设计有限公司</title>
+  <meta name="description" content="联系深圳市异方建筑设计有限公司，开启您的设计项目">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Noto+Sans+SC:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">
+        <span>异方建筑</span>
+        <span class="gold-text">|</span>
+        <span style="font-size:0.8rem;font-weight:300">YIFANG</span>
+      </a>
+      <nav class="nav">
+        <a href="/" data-i18n="nav.home">首页</a>
+        <a href="/about.html" data-i18n="nav.about">关于我们</a>
+        <a href="/services.html" data-i18n="nav.services">服务范围</a>
+        <a href="/portfolio.html" data-i18n="nav.portfolio">项目案例</a>
+        <a href="/news.html" data-i18n="nav.news">新闻动态</a>
+        <a href="/contact.html" data-i18n="nav.contact" class="active">联系我们</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="zh" onclick="i18n.switchLang('zh')">中</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchLang('en')">EN</button>
+        </div>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="container">
+      <h1 data-i18n="contact.page.title">联系我们</h1>
+      <p data-i18n="contact.page.desc">为您的下一个项目联系我们</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid reveal">
+        <!-- Contact Info -->
+        <div>
+          <div class="contact-info-item">
+            <h4 data-i18n="contact.address.title">办公地址</h4>
+            <p>深圳市南山区科技园南区<br>科技南路18号深圳湾科技生态园12栋B座20层</p>
+          </div>
+          <div class="contact-info-item">
+            <h4 data-i18n="contact.phone.title">电话</h4>
+            <p>+86 755 8888 6666<br>+86 755 8888 6667</p>
+          </div>
+          <div class="contact-info-item">
+            <h4 data-i18n="contact.email.title">邮箱</h4>
+            <p>info@yifang-arch.com<br>business@yifang-arch.com</p>
+          </div>
+          <div class="contact-info-item">
+            <h4 data-i18n="contact.hours.title">工作时间</h4>
+            <p data-i18n="contact.hours.text">周一至周五，上午 9:00 — 下午 6:00</p>
+          </div>
+        </div>
+
+        <!-- Contact Form (display only - needs Formspree/backend to function) -->
+        <div>
+          <h3 style="font-size:1.4rem;font-weight:300;margin-bottom:var(--space-lg);letter-spacing:0.05em" data-i18n="contact.form.title">给我们留言</h3>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.form.name">您的姓名</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.placeholder.name" placeholder="请输入姓名" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.form.email">您的邮箱</label>
+              <input type="email" id="email" name="email" data-i18n-placeholder="contact.form.placeholder.email" placeholder="请输入邮箱" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" data-i18n="contact.form.subject">主题</label>
+              <select id="subject" name="subject" data-i18n-placeholder="contact.form.placeholder.subject">
+                <option value="architecture" data-i18n="service.architecture.title">建筑设计</option>
+                <option value="interior" data-i18n="service.interior.title">室内设计</option>
+                <option value="planning" data-i18n="service.planning.title">规划景观</option>
+                <option value="consulting" data-i18n="service.consulting.title">设计咨询</option>
+                <option value="other">其他 / Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.form.message">您的留言</label>
+              <textarea id="message" name="message" data-i18n-placeholder="contact.form.placeholder.message" placeholder="请告诉我们您的项目..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">发送消息</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="reveal text-center">
+        <p class="section-subtitle">LOCATION</p>
+        <h2 class="section-title">我们的位置</h2>
+        <div class="gold-line" style="margin:0 auto var(--space-lg)"></div>
+      </div>
+      <div class="placeholder-img reveal" style="width:100%;height:400px;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.9rem;letter-spacing:0.15em;flex-direction:column;gap:var(--space-sm)">
+        <span style="font-size:2rem">🗺</span>
+        <span>深圳市南山区科技园南区 — 地图占位</span>
+        <span style="font-size:0.8rem">可替换为 Google Maps / 百度地图 嵌入</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">异方建筑 <span class="gold-text">|</span> YIFANG</div>
+          <p class="footer-desc" data-i18n="footer.desc">一家专业的建筑设计机构，致力于通过创新设计和精湛工艺创造永恒的建成环境。</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.nav.title">快速导航</h4>
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/about.html" data-i18n="nav.about">关于我们</a>
+          <a href="/services.html" data-i18n="nav.services">服务范围</a>
+          <a href="/portfolio.html" data-i18n="nav.portfolio">项目案例</a>
+          <a href="/news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="/contact.html" data-i18n="nav.contact">联系我们</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.services.title">服务项目</h4>
+          <a href="/services.html" data-i18n="service.architecture.title">建筑设计</a>
+          <a href="/services.html" data-i18n="service.interior.title">室内设计</a>
+          <a href="/services.html" data-i18n="service.planning.title">规划景观</a>
+          <a href="/services.html" data-i18n="service.consulting.title">设计咨询</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact.title">联系方式</h4>
+          <p class="footer-desc">深圳市南山区科技园南区</p>
+          <p class="footer-desc">+86 755 8888 6666</p>
+          <p class="footer-desc">info@yifang-arch.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 深圳市异方建筑设计有限公司 版权所有</span>
+        <span>粤ICP备XXXXXXXX号</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

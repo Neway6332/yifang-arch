@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>深圳市异方建筑设计有限公司 | Yifang Architectural Design</title>
+  <meta name="description" content="深圳市异方建筑设计有限公司 — 专业建筑/室内/规划景观设计及咨询服务">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Noto+Sans+SC:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">
+        <span>异方建筑</span>
+        <span class="gold-text">|</span>
+        <span style="font-size:0.8rem;font-weight:300">YIFANG</span>
+      </a>
+      <nav class="nav">
+        <a href="/" data-i18n="nav.home" class="active">首页</a>
+        <a href="/about.html" data-i18n="nav.about">关于我们</a>
+        <a href="/services.html" data-i18n="nav.services">服务范围</a>
+        <a href="/portfolio.html" data-i18n="nav.portfolio">项目案例</a>
+        <a href="/news.html" data-i18n="nav.news">新闻动态</a>
+        <a href="/contact.html" data-i18n="nav.contact">联系我们</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="zh" onclick="i18n.switchLang('zh')">中</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchLang('en')">EN</button>
+        </div>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-bg"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge" data-i18n="hero.badge">深圳市异方建筑设计有限公司</span>
+      <h1 class="hero-title" data-i18n="hero.title">建筑与自然文化<br>和谐共生</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">建筑设计 | 室内设计 | 规划景观 | 方案设计咨询</p>
+      <div class="hero-actions">
+        <a href="/portfolio.html" class="btn btn-primary" data-i18n="hero.cta.portfolio">查看项目</a>
+        <a href="/contact.html" class="btn btn-outline" data-i18n="hero.cta.contact">联系我们</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#featured">
+        <span data-i18n="hero.scroll">向下滚动</span>
+        <div class="scroll-line"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-subtitle" data-i18n="section.featured.subtitle">代表作品</p>
+        <h2 class="section-title" data-i18n="section.featured.title">精选项目</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="projects-grid reveal">
+        <div class="project-card" data-project-id="1">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.8rem;letter-spacing:0.1em">
+            PROJECT 01
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="project-card-title" data-i18n="portfolio.view">云麓山庄</h3>
+          </div>
+        </div>
+        <div class="project-card" data-project-id="2">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.8rem;letter-spacing:0.1em">
+            PROJECT 02
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="project-card-title">城市艺术中心</h3>
+          </div>
+        </div>
+        <div class="project-card" data-project-id="3">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.8rem;letter-spacing:0.1em">
+            PROJECT 03
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="project-card-title">湖畔住宅</h3>
+          </div>
+        </div>
+        <div class="project-card" data-project-id="4">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.8rem;letter-spacing:0.1em">
+            PROJECT 04
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="project-card-title">企业总部</h3>
+          </div>
+        </div>
+        <div class="project-card" data-project-id="5">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.8rem;letter-spacing:0.1em">
+            PROJECT 05
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-category" data-i18n="portfolio.filter.interior">室内设计</span>
+            <h3 class="project-card-title">精品酒店室内</h3>
+          </div>
+        </div>
+        <div class="project-card" data-project-id="6">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.8rem;letter-spacing:0.1em">
+            PROJECT 06
+          </div>
+          <div class="project-card-overlay">
+            <span class="project-card-category" data-i18n="portfolio.filter.interior">室内设计</span>
+            <h3 class="project-card-title">商业空间设计</h3>
+          </div>
+        </div>
+      </div>
+      <div class="text-center reveal" style="margin-top:var(--space-xl)">
+        <a href="/portfolio.html" class="btn btn-outline" data-i18n="section.featured.all">查看全部项目</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section section-dark" id="services">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-subtitle" data-i18n="section.services.subtitle">我们的专业领域</p>
+        <h2 class="section-title" data-i18n="section.services.title">服务范围</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="service-card-number">01</div>
+          <h3 class="service-card-title" data-i18n="service.architecture.title">建筑设计</h3>
+          <p class="service-card-desc" data-i18n="service.architecture.desc">涵盖住宅、商业、文化、公共建筑等领域的综合建筑设计解决方案，融合创新与功能。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-number">02</div>
+          <h3 class="service-card-title" data-i18n="service.interior.title">室内设计</h3>
+          <p class="service-card-desc" data-i18n="service.interior.desc">创造激发灵感的室内空间，将美学、人体工程学与品牌形象和谐统一。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-number">03</div>
+          <h3 class="service-card-title" data-i18n="service.planning.title">规划景观</h3>
+          <p class="service-card-desc" data-i18n="service.planning.desc">尊重生态平衡、提升生活品质的战略性城市规划和景观设计。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card-number">04</div>
+          <h3 class="service-card-title" data-i18n="service.consulting.title">设计咨询</h3>
+          <p class="service-card-desc" data-i18n="service.consulting.desc">涵盖可行性研究、设计评审、项目管理和技术指导的专业咨询服务。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-preview reveal">
+        <div class="placeholder-img about-preview-image" style="display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.9rem;letter-spacing:0.15em">
+          <span>YIFANG<br>ARCHITECTURE</span>
+        </div>
+        <div class="about-preview-content">
+          <p class="section-subtitle" data-i18n="section.about.subtitle">设计理念</p>
+          <h2 data-i18n="section.about.title">关于异方</h2>
+          <div class="gold-line"></div>
+          <p data-i18n="about.preview.text">深圳市异方建筑设计有限公司是一家集建筑、室内、规划景观及方案设计咨询于一体的专业设计机构。我们拥有一支经验丰富的建筑师和设计师团队，致力于创造尊重场地、文化和自然环境的永恒建筑作品。</p>
+          <a href="/about.html" class="btn btn-primary" data-i18n="about.cta">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Preview -->
+  <section class="section section-dark" id="news">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-subtitle" data-i18n="section.news.subtitle">公司资讯</p>
+        <h2 class="section-title" data-i18n="section.news.title">最新动态</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="news-list reveal">
+        <div class="news-item">
+          <span class="news-item-date">2026.05.15</span>
+          <div class="news-item-content">
+            <h3>异方建筑荣获2026年度建筑设计创新奖</h3>
+            <p>公司设计的云麓山庄项目凭借其创新的建筑理念和与自然环境的完美融合，荣获本年度建筑设计创新大奖。</p>
+            <span class="news-item-tag">公司新闻</span>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-item-date">2026.04.28</span>
+          <div class="news-item-content">
+            <h3>异方建筑中标深圳湾文化广场设计项目</h3>
+            <p>我司在深圳湾文化广场国际设计竞赛中脱颖而出，将负责该项目的建筑方案设计和深化工作。</p>
+            <span class="news-item-tag">项目动态</span>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-item-date">2026.03.10</span>
+          <div class="news-item-content">
+            <h3>异方设计团队赴日本考察交流</h3>
+            <p>公司设计团队前往东京、大阪等地进行为期两周的建筑考察与学术交流活动。</p>
+            <span class="news-item-tag">团队动态</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center reveal" style="margin-top:var(--space-xl)">
+        <a href="/news.html" class="btn btn-outline" data-i18n="news.view">查看全部</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">异方建筑 <span class="gold-text">|</span> YIFANG</div>
+          <p class="footer-desc" data-i18n="footer.desc">一家专业的建筑设计机构，致力于通过创新设计和精湛工艺创造永恒的建成环境。</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.nav.title">快速导航</h4>
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/about.html" data-i18n="nav.about">关于我们</a>
+          <a href="/services.html" data-i18n="nav.services">服务范围</a>
+          <a href="/portfolio.html" data-i18n="nav.portfolio">项目案例</a>
+          <a href="/news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="/contact.html" data-i18n="nav.contact">联系我们</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.services.title">服务项目</h4>
+          <a href="/services.html" data-i18n="service.architecture.title">建筑设计</a>
+          <a href="/services.html" data-i18n="service.interior.title">室内设计</a>
+          <a href="/services.html" data-i18n="service.planning.title">规划景观</a>
+          <a href="/services.html" data-i18n="service.consulting.title">设计咨询</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact.title">联系方式</h4>
+          <p class="footer-desc">深圳市南山区科技园南区</p>
+          <p class="footer-desc">+86 755 8888 6666</p>
+          <p class="footer-desc">info@yifang-arch.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 深圳市异方建筑设计有限公司 版权所有</span>
+        <span>粤ICP备XXXXXXXX号</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <img class="modal-image placeholder-img" src="" alt="">
+      <div class="modal-body"></div>
+    </div>
+    <button class="modal-close">✕</button>
+  </div>
+
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

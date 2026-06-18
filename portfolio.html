@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目案例 — 深圳市异方建筑设计有限公司</title>
+  <meta name="description" content="深圳市异方建筑设计有限公司精选项目案例展示">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Noto+Sans+SC:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">
+        <span>异方建筑</span>
+        <span class="gold-text">|</span>
+        <span style="font-size:0.8rem;font-weight:300">YIFANG</span>
+      </a>
+      <nav class="nav">
+        <a href="/" data-i18n="nav.home">首页</a>
+        <a href="/about.html" data-i18n="nav.about">关于我们</a>
+        <a href="/services.html" data-i18n="nav.services">服务范围</a>
+        <a href="/portfolio.html" data-i18n="nav.portfolio" class="active">项目案例</a>
+        <a href="/news.html" data-i18n="nav.news">新闻动态</a>
+        <a href="/contact.html" data-i18n="nav.contact">联系我们</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="zh" onclick="i18n.switchLang('zh')">中</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchLang('en')">EN</button>
+        </div>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="container">
+      <h1 data-i18n="portfolio.page.title">项目案例</h1>
+      <p data-i18n="portfolio.page.desc">探索我们的精选作品</p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">全部</button>
+        <button class="filter-btn" data-filter="architecture" data-i18n="portfolio.filter.architecture">建筑设计</button>
+        <button class="filter-btn" data-filter="interior" data-i18n="portfolio.filter.interior">室内设计</button>
+        <button class="filter-btn" data-filter="planning" data-i18n="portfolio.filter.planning">规划设计</button>
+        <button class="filter-btn" data-filter="landscape" data-i18n="portfolio.filter.landscape">景观设计</button>
+      </div>
+      <div class="portfolio-grid reveal">
+        <div class="portfolio-item" data-category="architecture" data-project-id="1">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">01</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="portfolio-item-title">云麓山庄</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="architecture" data-project-id="2">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">02</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="portfolio-item-title">城市艺术中心</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="architecture" data-project-id="3">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">03</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="portfolio-item-title">湖畔住宅</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="architecture" data-project-id="4">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">04</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.architecture">建筑设计</span>
+            <h3 class="portfolio-item-title">企业总部</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="interior" data-project-id="5">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">05</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.interior">室内设计</span>
+            <h3 class="portfolio-item-title">精品酒店室内</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="interior" data-project-id="6">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">06</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.interior">室内设计</span>
+            <h3 class="portfolio-item-title">商业空间设计</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="planning" data-project-id="7">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">07</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.planning">规划设计</span>
+            <h3 class="portfolio-item-title">滨水城市设计</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="landscape" data-project-id="8">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">08</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.landscape">景观设计</span>
+            <h3 class="portfolio-item-title">社区公园景观</h3>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="planning" data-project-id="9">
+          <div class="placeholder-img" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--color-text-dim);font-size:0.7rem;letter-spacing:0.1em">09</div>
+          <div class="portfolio-item-info">
+            <span class="portfolio-item-category" data-i18n="portfolio.filter.planning">规划设计</span>
+            <h3 class="portfolio-item-title">文化街区更新</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">异方建筑 <span class="gold-text">|</span> YIFANG</div>
+          <p class="footer-desc" data-i18n="footer.desc">一家专业的建筑设计机构，致力于通过创新设计和精湛工艺创造永恒的建成环境。</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.nav.title">快速导航</h4>
+          <a href="/" data-i18n="nav.home">首页</a>
+          <a href="/about.html" data-i18n="nav.about">关于我们</a>
+          <a href="/services.html" data-i18n="nav.services">服务范围</a>
+          <a href="/portfolio.html" data-i18n="nav.portfolio">项目案例</a>
+          <a href="/news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="/contact.html" data-i18n="nav.contact">联系我们</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.services.title">服务项目</h4>
+          <a href="/services.html" data-i18n="service.architecture.title">建筑设计</a>
+          <a href="/services.html" data-i18n="service.interior.title">室内设计</a>
+          <a href="/services.html" data-i18n="service.planning.title">规划景观</a>
+          <a href="/services.html" data-i18n="service.consulting.title">设计咨询</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact.title">联系方式</h4>
+          <p class="footer-desc">深圳市南山区科技园南区</p>
+          <p class="footer-desc">+86 755 8888 6666</p>
+          <p class="footer-desc">info@yifang-arch.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 深圳市异方建筑设计有限公司 版权所有</span>
+        <span>粤ICP备XXXXXXXX号</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <img class="modal-image placeholder-img" src="" alt="">
+      <div class="modal-body"></div>
+    </div>
+    <button class="modal-close">✕</button>
+  </div>
+
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
